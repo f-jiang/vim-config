@@ -44,3 +44,6 @@ set foldlevel=2
 " remember files' fold states
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+" increase initial tab limit
+set tabpagemax=100
