@@ -23,6 +23,7 @@ set incsearch
 set number
 
 " indentation - general
+set autoindent
 set tabstop=4
 set softtabstop=0 expandtab
 set shiftwidth=4 smarttab
@@ -47,3 +48,7 @@ autocmd BufWinEnter *.* silent loadview
 
 " increase initial tab limit
 set tabpagemax=100
+
+" cmd line suggestions
+set wildmenu
+
