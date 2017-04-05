@@ -55,3 +55,6 @@ set wildmenu
 " current line caret
 set cursorline
 
+" show in-progress cmds
+set showcmd
+
