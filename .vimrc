@@ -19,8 +19,9 @@ set list lcs=tab:\|\ " one space necessary
 set hlsearch
 set incsearch
 
-" line numbers
+" line numbers - hybrid
 set number
+set relativenumber
 
 " indentation - general
 set autoindent
