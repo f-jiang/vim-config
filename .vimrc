@@ -52,3 +52,6 @@ set tabpagemax=100
 " cmd line suggestions
 set wildmenu
 
+" current line caret
+set cursorline
+
