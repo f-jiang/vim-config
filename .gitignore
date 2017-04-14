@@ -1,3 +1,7 @@
 .vim/view/
 .netrwhist
 
+# ignore everything in .vim/bundle/ except Vundle.vim
+.vim/bundle/*
+!.vim/bundle/Vundle.vim
+

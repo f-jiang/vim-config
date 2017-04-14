@@ -1,16 +1,27 @@
-" filetype detection, filetype-specific scripts and indent scripts
-filetype plugin indent on
+" vundle config - must be first
+set nocompatible
+filetype off
 
-" tagbar config
-set runtimepath+=~/.vim/bundle/tagbar
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" vundle-managed plugins
+Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
 
-" indentLine config
-set runtimepath+=~/.vim/bundle/indentLine/after
+Plugin 'Yggdroot/indentLine'
 let g:indentLine_char = '|'
 let g:indentLine_color_term = 239 
 let g:indentLine_color_gui = '#A4E57E'
+
+" indentLine config
+set runtimepath+=~/.vim/bundle/indentLine/after
+" end vundle config
+call vundle#end()
+filetype plugin indent on
 
 " indentation guides for tab chars
 set list lcs=tab:\|\ " one space necessary
