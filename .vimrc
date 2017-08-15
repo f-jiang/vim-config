@@ -44,9 +44,11 @@ set shiftwidth=4 smarttab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
-" syntax highlighting
+" syntax highlighting, colour scheme, and background transparency
 syntax enable
 colorscheme monokai
+hi Normal ctermbg=none
+hi NonText ctermbg=none
 
 " folding
 set foldmethod=indent
