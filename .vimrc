@@ -8,6 +8,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " vundle-managed plugins
+Plugin 'scrooloose/nerdtree'
+nmap <C-n> :NERDTreeToggle<CR>
+
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
