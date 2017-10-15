@@ -22,6 +22,8 @@ let g:indentLine_color_gui = '#A4E57E'
 
 Plugin 'sickill/vim-monokai'
 
+Plugin 'leafgarland/typescript-vim'
+
 " indentLine config
 set runtimepath+=~/.vim/bundle/indentLine/after
 " end vundle config
