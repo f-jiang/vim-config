@@ -65,10 +65,6 @@ set tabstop=4
 set softtabstop=0 expandtab
 set shiftwidth=4 smarttab
 
-" indentation by filetype
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-
 " syntax highlighting, colour scheme, and background transparency
 syntax enable
 colorscheme monokai
