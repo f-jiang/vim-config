@@ -34,6 +34,7 @@ let g:tagbar_type_typescript = {
 \ }
 
 Plugin 'Yggdroot/indentLine'
+set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '|'
 let g:indentLine_color_term = 239 
 let g:indentLine_color_gui = '#A4E57E'
@@ -42,8 +43,6 @@ Plugin 'sickill/vim-monokai'
 
 Plugin 'leafgarland/typescript-vim'
 
-" indentLine config
-set runtimepath+=~/.vim/bundle/indentLine/after
 " end vundle config
 call vundle#end()
 filetype plugin indent on
