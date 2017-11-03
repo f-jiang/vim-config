@@ -33,6 +33,9 @@ let g:tagbar_type_typescript = {
   \ 'sort' : 0
 \ }
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'Yggdroot/indentLine'
 set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '|'
