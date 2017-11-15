@@ -36,6 +36,7 @@ let g:tagbar_type_typescript = {
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'deus'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
