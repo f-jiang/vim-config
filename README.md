@@ -24,4 +24,4 @@ vim +PluginUpdate +PluginInstall
 
 # TODO
 
-[ ] Setup script
+- [ ] Setup script
