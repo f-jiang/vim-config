@@ -65,6 +65,9 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+" show buffer list
+let g:airline#extensions#tabline#enabled = 1
+
 Plugin 'Yggdroot/indentLine'
 set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '|'
