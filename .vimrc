@@ -78,6 +78,10 @@ Plugin 'sickill/vim-monokai'
 
 Plugin 'leafgarland/typescript-vim'
 
+Plugin 'mhinz/vim-signify'
+let g:signify_vcs_list = ['git', 'svn']
+let g:signify_realtime = 1
+
 " end vundle config
 call vundle#end()
 filetype plugin indent on
