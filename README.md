@@ -25,3 +25,4 @@ vim +PluginUpdate +PluginInstall
 # TODO
 
 - [ ] Setup script
+- [ ] Make oldfiles searchable
