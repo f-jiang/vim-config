@@ -26,3 +26,5 @@ vim +PluginUpdate +PluginInstall
 
 - [ ] Setup script
 - [ ] Make oldfiles searchable
+- [ ] `autochdir`
+- [ ] Smart file searching
