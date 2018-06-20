@@ -22,6 +22,12 @@ vim +PluginUpdate +PluginInstall
 
 4. Install powerline fonts from https://github.com/powerline/fonts, then set chosen font in term emulator settings
 
+5. Install Exuberant Ctags (used by tagbar)
+
+```
+sudo apt install exuberant-ctags
+```
+
 # TODO
 
 - [ ] Setup script
