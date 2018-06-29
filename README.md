@@ -27,12 +27,3 @@ vim +PluginUpdate +PluginInstall
 ```
 sudo apt install exuberant-ctags
 ```
-
-# TODO
-
-- [ ] Setup script
-- [ ] Make oldfiles searchable
-- [ ] `autochdir`
-- [ ] Smart file searching (for file completion etc)
-- [ ] Resolve inverted vsplit window width adjustment
-- [ ] Make buf numbers consecutive
