@@ -27,3 +27,12 @@ vim +PluginUpdate +PluginInstall
 ```
 sudo apt install exuberant-ctags
 ```
+
+6. [Prevent quotes from being concealed in JSON files](https://github.com/Yggdroot/indentLine/issues/140):
+
+```
+$ sudo vi
+  :e $VIMRUNTIME/syntax/json.vim
+  :g/if has('conceal')/s//& \&\& 0/
+  :x!
+```
