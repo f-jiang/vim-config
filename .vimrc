@@ -82,6 +82,11 @@ Plugin 'mhinz/vim-signify'
 let g:signify_vcs_list = ['git', 'svn']
 let g:signify_realtime = 1
 
+Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+
 " end vundle config
 call vundle#end()
 filetype plugin indent on
