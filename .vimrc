@@ -36,7 +36,6 @@ let g:tagbar_type_typescript = {
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'murmur'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -75,6 +74,7 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
 
 Plugin 'sickill/vim-monokai'
+Plugin 'junegunn/seoul256.vim'
 
 Plugin 'leafgarland/typescript-vim'
 
@@ -110,9 +110,6 @@ set shiftwidth=4 smarttab
 
 " syntax highlighting, colour scheme, and background transparency
 syntax enable
-colorscheme monokai
-hi Normal ctermbg=none
-hi NonText ctermbg=none
 
 " folding
 set foldmethod=indent
@@ -135,4 +132,13 @@ set cursorline
 
 " show in-progress cmds
 set showcmd
+
+" time of day-dependent settings: colorscheme and airline_theme
+if strftime("%H") > 8 && strftime("%H") < 19
+    let g:airline_theme = 'papercolor'
+    colorscheme seoul256-light
+else
+    let g:airline_theme = 'murmur'
+    colorscheme monokai
+endif
 
