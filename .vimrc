@@ -87,6 +87,13 @@ let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
+Plugin 'nightsense/night-and-day'
+let g:nd_themes = [
+  \ ['08:00', 'seoul256-light', 'light', 'papercolor' ],
+  \ ['19:00', 'monokai', 'light' , 'murmur' ],
+  \ ]
+let g:nd_airline = 1
+
 " end vundle config
 call vundle#end()
 filetype plugin indent on
@@ -132,13 +139,4 @@ set cursorline
 
 " show in-progress cmds
 set showcmd
-
-" time of day-dependent settings: colorscheme and airline_theme
-if strftime("%H") > 8 && strftime("%H") < 19
-    let g:airline_theme = 'papercolor'
-    colorscheme seoul256-light
-else
-    let g:airline_theme = 'murmur'
-    colorscheme monokai
-endif
 
