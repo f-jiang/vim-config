@@ -93,6 +93,7 @@ let g:nd_themes = [
   \ ['19:00', 'monokai', 'light' , 'murmur' ],
   \ ]
 let g:nd_airline = 1
+let g:colorscheme_switcher_define_mappings = 0
 
 " end vundle config
 call vundle#end()
