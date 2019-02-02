@@ -1,4 +1,6 @@
+"
 " vundle config - must be first
+"
 set nocompatible
 filetype off
 
@@ -7,10 +9,15 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+"
 " vundle-managed plugins
+"
+
+" filetree browser
 Plugin 'scrooloose/nerdtree'
 nmap <C-n> :NERDTreeToggle<CR>
 
+" code outline viewer
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
@@ -32,6 +39,10 @@ let g:tagbar_type_typescript = {
   \ ],
   \ 'sort' : 0
 \ }
+
+"
+" enhanced statusline
+"
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -67,26 +78,31 @@ let g:airline_symbols.linenr = ''
 " show buffer list
 let g:airline#extensions#tabline#enabled = 1
 
+" shows indentation guides for space-indented code
 Plugin 'Yggdroot/indentLine'
 set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
 
+" colorschemes
 Plugin 'sickill/vim-monokai'
 Plugin 'junegunn/seoul256.vim'
 
 Plugin 'leafgarland/typescript-vim'
 
+" diff indicators
 Plugin 'mhinz/vim-signify'
 let g:signify_vcs_list = ['git', 'svn']
 let g:signify_realtime = 1
 
+" enhanced commenting
 Plugin 'scrooloose/nerdcommenter'
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
+" change colorscheme based on time of day
 Plugin 'nightsense/night-and-day'
 let g:nd_themes = [
   \ ['08:00', 'seoul256-light', 'light', 'papercolor' ],
@@ -95,7 +111,9 @@ let g:nd_themes = [
 let g:nd_airline = 1
 let g:colorscheme_switcher_define_mappings = 0
 
+"
 " end vundle config
+"
 call vundle#end()
 filetype plugin indent on
 
