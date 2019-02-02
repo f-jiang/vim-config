@@ -141,3 +141,5 @@ set cursorline
 " show in-progress cmds
 set showcmd
 
+" line-width marker
+set colorcolumn=100
