@@ -111,6 +111,9 @@ let g:nd_themes = [
 let g:nd_airline = 1
 let g:colorscheme_switcher_define_mappings = 0
 
+" easily surround text objects with text
+Plugin 'tpope/vim-surround'
+
 "
 " end vundle config
 "
