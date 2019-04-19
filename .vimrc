@@ -164,3 +164,8 @@ set showcmd
 
 " line-width marker
 set colorcolumn=100
+
+" mouse support
+set ttymouse=xterm2
+set mouse=a
+
