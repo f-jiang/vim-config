@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " filetree browser
 Plugin 'scrooloose/nerdtree'
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
 
 " code outline viewer
 Plugin 'majutsushi/tagbar'
@@ -168,4 +168,8 @@ set colorcolumn=100
 " mouse support
 set ttymouse=xterm2
 set mouse=a
+
+" buffer command mappings
+map gn :bn<cr>
+map gp :bp<cr>
 
