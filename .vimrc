@@ -166,7 +166,7 @@ set showcmd
 set colorcolumn=100
 
 " mouse support
-set ttymouse=xterm2
+set ttymouse=sgr
 set mouse=a
 
 " buffer command mappings
