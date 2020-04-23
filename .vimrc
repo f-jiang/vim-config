@@ -21,6 +21,7 @@ nmap <F7> :NERDTreeToggle<CR>
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
+let g:tagbar_iconchars = ['▸', '▾']
 let g:tagbar_type_typescript = {
   \ 'ctagsbin' : 'tstags',
   \ 'ctagsargs' : '-f-',
