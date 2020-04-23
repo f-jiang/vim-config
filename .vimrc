@@ -116,6 +116,10 @@ let g:colorscheme_switcher_define_mappings = 0
 " easily surround text objects with text
 Plugin 'tpope/vim-surround'
 
+" icons
+Plugin 'ryanoasis/vim-devicons'
+set encoding=UTF-8
+
 "
 " end vundle config
 "

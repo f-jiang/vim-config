@@ -20,7 +20,7 @@ git submodule update
 vim +PluginUpdate +PluginInstall
 ```
 
-4. Install powerline fonts from https://github.com/powerline/fonts, then set chosen font in term emulator settings
+4. [Install desired patched NERD font](https://github.com/ryanoasis/nerd-fonts#patched-fonts) and set in terminal
 
 5. Install Exuberant Ctags (used by tagbar)
 
