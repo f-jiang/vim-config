@@ -179,3 +179,10 @@ set mouse=a
 map gn :bn<cr>
 map gp :bp<cr>
 
+" filetype associations
+autocmd BufRead,BufNewFile *.launch set filetype=xml
+autocmd BufRead,BufNewFile *.urdf set filetype=xml
+autocmd BufRead,BufNewFile *.xacro set filetype=xml
+autocmd BufRead,BufNewFile *.ino set filetype=cpp
+autocmd BufRead,BufNewFile *.cfg set filetype=python
+
