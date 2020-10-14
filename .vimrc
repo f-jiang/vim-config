@@ -190,3 +190,6 @@ autocmd BufRead,BufNewFile *.xacro set filetype=xml
 autocmd BufRead,BufNewFile *.ino set filetype=cpp
 autocmd BufRead,BufNewFile *.cfg set filetype=python
 
+" set web browser
+let g:netrw_browsex_viewer='google-chrome'
+
