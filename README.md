@@ -3,8 +3,9 @@
 1. Make symlinks for `~/.vim` and `~/.vimrc`
 
 ```
-$ ln -s ${HOME}/vim-config/.vim ${HOME}/.vim
-$ ln -s ${HOME}/vim-config/.vimrc ${HOME}/.vimrc
+# run from within repo
+ln -s `pwd`/.vim ${HOME}/.vim
+ln -s `pwd`/.vimrc ${HOME}/.vimrc
 ```
 
 2. `cd` into repo, then set up submodule for Vundle
