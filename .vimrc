@@ -196,3 +196,6 @@ let g:netrw_browsex_viewer='google-chrome'
 " enable spell checker
 set spell
 
+" show trailing whitespace
+set listchars=trail:-
+
