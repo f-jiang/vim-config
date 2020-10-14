@@ -104,6 +104,9 @@ Plugin 'scrooloose/nerdcommenter'
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
+let g:NERDCustomDelimiters = {
+    \ 'arduino': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }
+\ }
 
 " change colorscheme based on time of day
 Plugin 'nightsense/night-and-day'
