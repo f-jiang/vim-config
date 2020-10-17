@@ -86,7 +86,7 @@ set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
-autocmd BufWinEnter,WinEnter *.* IndentLinesEnable
+autocmd BufWinEnter,WinEnter *\(.*\)\= IndentLinesEnable
 
 " colorschemes
 Plugin 'sickill/vim-monokai'
