@@ -15,11 +15,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 " filetree browser
 Plugin 'scrooloose/nerdtree'
-nmap <F7> :NERDTreeToggle<CR>
+nnoremap <F7> :NERDTreeToggle<CR>
 
 " code outline viewer
 Plugin 'majutsushi/tagbar'
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
 let g:tagbar_iconchars = ['▸', '▾']
 let g:tagbar_type_typescript = {
@@ -203,8 +203,8 @@ set ttymouse=sgr
 set mouse=a
 
 " buffer command mappings
-map gn :bn<cr>
-map gp :bp<cr>
+nnoremap gn :bn<cr>
+nnoremap gp :bp<cr>
 
 " filetype associations
 autocmd BufRead,BufNewFile *.launch set filetype=xml
