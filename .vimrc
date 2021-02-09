@@ -130,7 +130,7 @@ Plugin 'junegunn/fzf.vim'
 let g:fzf_preview_window = 'right:60%'
 nnoremap <C-P> :Files<cr>
 nnoremap <C-H> :History<cr>
-nnoremap <C-M> :Buffers<cr>
+nnoremap <C-J> :Buffers<cr>
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
