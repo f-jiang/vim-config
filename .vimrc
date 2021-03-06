@@ -169,6 +169,7 @@ set autoindent
 set tabstop=4
 set softtabstop=0 expandtab
 set shiftwidth=4 smarttab
+set shiftround
 
 " syntax highlighting, colour scheme, and background transparency
 syntax enable
