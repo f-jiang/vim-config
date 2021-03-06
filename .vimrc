@@ -218,5 +218,5 @@ autocmd BufRead,BufNewFile *.cfg set filetype=python
 let g:netrw_browsex_viewer='google-chrome'
 
 " show trailing whitespace
-set listchars=trail:-
+set listchars=trail:~
 
