@@ -94,6 +94,7 @@ autocmd BufWinEnter,WinEnter *\(.*\)\= IndentLinesEnable
 " colorschemes
 Plugin 'sickill/vim-monokai'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'sainnhe/sonokai'
 
 Plugin 'leafgarland/typescript-vim'
 
@@ -110,15 +111,6 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDCustomDelimiters = {
     \ 'arduino': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }
 \ }
-
-" change colorscheme based on time of day
-Plugin 'nightsense/night-and-day'
-let g:nd_themes = [
-  \ ['08:00', 'seoul256-light', 'light', 'papercolor' ],
-  \ ['19:00', 'monokai', 'light' , 'murmur' ],
-  \ ]
-let g:nd_airline = 1
-let g:colorscheme_switcher_define_mappings = 0
 
 " easily surround text objects with text
 Plugin 'tpope/vim-surround'
@@ -176,6 +168,19 @@ set shiftround
 
 " syntax highlighting, colour scheme, and background transparency
 syntax enable
+
+" colorscheme
+if has('termguicolors')
+    set termguicolors
+endif
+
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 0
+let g:sonokai_disable_italic_comment = 1
+let g:sonokai_show_eob = 1
+let g:sonokai_better_performance = 1
+
+colo sonokai
 
 " folding
 set foldmethod=indent
