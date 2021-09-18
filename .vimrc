@@ -122,7 +122,7 @@ set encoding=UTF-8
 " fuzzy finder
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-let g:fzf_preview_window = 'right:60%'
+let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 nnoremap <C-P> :Files<cr>
 nnoremap <C-H> :History<cr>
 nnoremap <C-J> :Buffers<cr>
