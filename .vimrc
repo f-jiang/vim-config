@@ -142,6 +142,9 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" automatic tag generation and updating
+Plugin 'ludovicchabant/vim-gutentags'
+
 "
 " end vundle config
 "
