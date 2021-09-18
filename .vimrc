@@ -192,6 +192,10 @@ set nofoldenable
 set foldlevel=2
 
 " remember files' fold states
+if v:version >= 800
+    set viewoptions-=curdir
+endif
+
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
