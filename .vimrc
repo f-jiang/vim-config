@@ -1,24 +1,41 @@
 "
-" vundle config - must be first
-"
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-
-"
-" vundle-managed plugins
+" vim-plug config
 "
 
-" filetree browser
-Plugin 'scrooloose/nerdtree'
+" auto-install
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" plugin list
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'            " filetree browser
+Plug 'majutsushi/tagbar'              " code outline viewer
+Plug 'vim-airline/vim-airline'        " enhanced statusline
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'           " tmux statusline
+Plug 'Yggdroot/indentLine'            " show indentation guides for space-indented code
+Plug 'sickill/vim-monokai'            " colorschemes
+Plug 'junegunn/seoul256.vim'
+Plug 'sainnhe/sonokai'
+Plug 'leafgarland/typescript-vim'     " ts language support
+Plug 'mhinz/vim-signify'              " diff indicators
+Plug 'scrooloose/nerdcommenter'       " enhanced commenting
+Plug 'tpope/vim-surround'             " easily surround text objects with text
+Plug 'ryanoasis/vim-devicons'         " icons
+Plug 'junegunn/fzf'                   " fuzzy finder
+Plug 'junegunn/fzf.vim'
+Plug 'ludovicchabant/vim-gutentags'   " automatic tag generation and updating
+
+call plug#end()
+
+" nerdtree config
 nnoremap <F7> :NERDTreeToggle<CR>
 
-" code outline viewer
-Plugin 'majutsushi/tagbar'
+" tagbar config
 nnoremap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
 let g:tagbar_iconchars = ['▸', '▾']
@@ -42,11 +59,9 @@ let g:tagbar_type_typescript = {
 \ }
 
 "
-" enhanced statusline
+" vim-airline config
 "
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
@@ -80,31 +95,18 @@ let g:airline_symbols.linenr = ''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" tmux statusline
-Plugin 'edkolev/tmuxline.vim'
-
-" shows indentation guides for space-indented code
-Plugin 'Yggdroot/indentLine'
+" indentLine config
 set runtimepath+=~/.vim/bundle/indentLine/after
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
 autocmd BufWinEnter,WinEnter *\(.*\)\= IndentLinesEnable
 
-" colorschemes
-Plugin 'sickill/vim-monokai'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'sainnhe/sonokai'
-
-Plugin 'leafgarland/typescript-vim'
-
-" diff indicators
-Plugin 'mhinz/vim-signify'
+" vim-signify config
 let g:signify_vcs_list = ['git', 'svn']
 let g:signify_realtime = 1
 
-" enhanced commenting
-Plugin 'scrooloose/nerdcommenter'
+" nerdcommenter config
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
@@ -112,16 +114,10 @@ let g:NERDCustomDelimiters = {
     \ 'arduino': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }
 \ }
 
-" easily surround text objects with text
-Plugin 'tpope/vim-surround'
-
-" icons
-Plugin 'ryanoasis/vim-devicons'
+" vim-devicons config
 set encoding=UTF-8
 
-" fuzzy finder
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+" fzf config
 let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 nnoremap <C-P> :Files<cr>
 nnoremap <C-H> :History<cr>
@@ -141,15 +137,6 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-
-" automatic tag generation and updating
-Plugin 'ludovicchabant/vim-gutentags'
-
-"
-" end vundle config
-"
-call vundle#end()
-filetype plugin indent on
 
 " indentation guides for tab chars
 set list lcs=tab:\|\ " one space necessary

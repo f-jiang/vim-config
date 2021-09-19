@@ -1,7 +1,7 @@
-.vim/view/
 .netrwhist
+tags
 
-# ignore everything in .vim/bundle/ except Vundle.vim
-.vim/bundle/*
-!.vim/bundle/Vundle.vim
+.vim/autoload
+.vim/plugged
+.vim/view/
 
